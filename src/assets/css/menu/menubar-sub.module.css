@@ -1,0 +1,41 @@
+@charset "UTF-8"; 
+
+.menuSub {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #242121a0;
+    height: 70px;
+}
+
+.menuList{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    gap: 30px;
+    padding: 1rem 2rem;
+}
+
+.menuList a{
+    text-decoration: none;
+    color: white;    
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.menuList a:hover {
+    color: #eec42b;
+    font-weight: bold       
+}
+
+.menuList a.active {
+    color: #eec42b;
+    font-weight: bold   
+}
+
+.menuList li {
+    list-style-type: none;
+}
