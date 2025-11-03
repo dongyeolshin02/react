@@ -2,5 +2,121 @@
 
 
 .books{
-    
+    box-sizing: border-box;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 1rem;
+}
+
+.mainImg{
+    width: 550px;
+    height: 430px;
+    max-width: 550px;
+    max-height: 430px;
+    border-radius: 5px;
+    object-fit: fill;                                                               ;
+}
+
+.colImgInfo{
+    flex: 1;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colProdInfo{
+     width: 600px;
+     flex: 1;
+     border: 1px solid black;
+     display: flex;
+     flex-direction: column;
+}
+
+/* 썸네일 컨테이너 */
+.thumbnailContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+/* 썸네일 이미지 */
+.thumbnail {
+    width: 70px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.thumbnail:hover {
+    border-color: #007bff;
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* 선택된 썸네일 */
+.activeThumbnail {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* 메인 이미지 컨테이너 */
+.mainImageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 화살표 버튼 공통 스타일 */
+.arrowButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 48px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 0;
+    line-height: 1;
+}
+
+.arrowButton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.arrowButton:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+/* 왼쪽 화살표 */
+.leftArrow {
+    left: 10px;
+}
+
+/* 오른쪽 화살표 */
+.rightArrow {
+    right: 10px;
+}
+
+.prodTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #a5a5a5;
 }
